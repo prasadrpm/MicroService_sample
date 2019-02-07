@@ -5,11 +5,18 @@ spring:
   application:
     name: eureka-server
 
-
+zuul:
+  routes:
+    product:
+      url: http://localhost:8081/product/info
+    cart:
+      url: http://localhost:8082/cart/info  
+      
 eureka:
   instance:
     hostname: localhost
   client:
     fetch-registry: false
     register-with-eureka: false
+ 
  
