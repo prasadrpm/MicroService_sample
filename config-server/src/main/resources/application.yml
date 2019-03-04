@@ -1,0 +1,19 @@
+spring:
+  application:
+    name: Config-Server
+  cloud:
+    config:
+      server:
+        native:
+          search-locations:
+          - C:\Workspace\config-Server\src\main\resources
+#        git:
+#          uri: https://github.com/prasadrpm/MicroService_sample/blob/master/Sample_Config.git
+#          skipSslValidation: true
+#          repos:
+#            config-server:
+#              pattern: config-server*/dev*
+#              uri: https://github.com/prasadrpm/MicroService_sample/blob/master/Sample_Config.yml
+#              cloneOnStart: true
+          
+                
